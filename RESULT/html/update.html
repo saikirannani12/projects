@@ -1,0 +1,83 @@
+<html>
+    <head>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+        <style>
+            .customDiv{
+                background-color: white;
+                border-radius: 50px;
+            }
+            body{
+				background-image: url("home.jpg");
+				background-repeat: no-repeat;
+				background-position: center;
+                background-size: cover ;
+			}
+        </style>
+    </head>
+    <body style="background-color: gray;">
+        <form action="update.com" method="POST" enctype="multipart/form-data">
+            <br><br>
+            <div class="container-fluid">
+                <div class="row" style="background-image: url('header.png'), linear-gradient(to right, #002650 50%, #025f3e); color: white; min-height: 130px;">
+                    <br>
+                    <div class="col-lg-12">
+                        <span class="col-lg-1"><img src="tsbie.jpg" class="img-circle" height="100px" width="100px"></span>
+                        <span class="col-lg-6"><text class="h2">Telangana State Board of Secondary Education</text><br><h3>Govt of Telangana</h3></span>
+                        <span class="col-lg-1"><img src="tsbie1.jpg" class="img-circle" height="100px" width="150px"></span>
+                        <span class="col-lg-offset-1 col-lg-1"><img src="kcr.png" class="img-circle"  height="100px" width="150px"></span>
+                    </div>
+                </div><br>
+                <div class="row">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-default navbar-inverse">
+                            <div class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right"> 
+                                    <li class="active"><a href="logout.jsp"><text class="glyphicon glyphicon-user"></text>&nbsp;&nbsp;Logout</a></li>
+                                </ul>
+                            </div> 
+                        </nav>
+                    </div>
+                </div>
+                <div class="customRow row">
+                    <div class="customDiv col-lg-offset-1 col-lg-4">
+                        <br><br>
+                        <div class="form-group">
+                            <label> STUDENT NAME :</label>
+                            <input class="form-control" type="text" name="SNAME" required>
+                        </div>
+                        <div class="form-group">
+                            <label> ROLL NO :</label>
+                            <input class="form-control" type="text" name="ROLL" required>
+                        </div>
+                        <div class="form-group">
+                            <label> FATHER NAME :</label>
+                            <input class="form-control" type="text" name="FNAME" required>
+                        </div>
+                        <div class="form-group">
+                            <label> COLLEGE NAME :</label>
+                            <input class="form-control" type="text" name="COL" required>
+                        </div>
+                        <div class="form-group">
+                            <label> COURSE :</label>
+                            <input class="form-control" type="text" name="MAJOR" required>
+                        </div>
+                        <div class="form-group">
+                            <label> DATE OF BIRTH :</label>
+                            <input class="form-control" type="date" name="DOB" required>
+                        </div>
+                        <div class="form-group">
+                            <label> PHOTO :</label>
+                            <input class="form-control" type="file" name="PHOTO" required>
+                        </div>
+                        <div class="form-group">
+                            <label> SIGNATURE :</label>
+                            <input class="form-control" type="file" name="SIGN" required>
+                        </div>   
+                        <input class="btn btn-primary" type="reset" value="CLEAR"> <input class="btn btn-success" type="submit" value="UPLOAD">  
+                        <br><br><br>                   
+                    </div>
+                </div>
+            </div>
+        </form>
+    </body>
+</html>
